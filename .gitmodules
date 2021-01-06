@@ -1,0 +1,12 @@
+[submodule "kicad_lib_tmk"]
+	path = kicad_lib_tmk
+	url = https://github.com/Gigahawk/kicad_lib_tmk.git
+[submodule "keyboard_parts.pretty"]
+	path = keyboard_parts.pretty
+	url = https://github.com/tmk/keyboard_parts.pretty.git
+[submodule "MX_Alps_Hybrid"]
+	path = MX_Alps_Hybrid
+	url = https://github.com/Gigahawk/MX_Alps_Hybrid.git
+[submodule "Gigahawk.pretty"]
+	path = Gigahawk.pretty
+	url = https://github.com/Gigahawk/Gigahawk.pretty.git
