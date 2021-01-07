@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -752,4 +752,10 @@ Wire Wire Line
 	2700 6000 2650 6000
 Wire Wire Line
 	2650 6000 2650 6100
+$Sheet
+S 13550 1950 2750 650 
+U 5FF9299E
+F0 "reciever_matrix" 50
+F1 "reciever_matrix.sch" 50
+$EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -610,132 +610,6 @@ ADC7
 Wire Wire Line
 	3100 2100 3000 2100
 $Comp
-L power:+5V #PWR016
-U 1 1 60058F3A
-P 9800 1350
-F 0 "#PWR016" H 9800 1200 50  0001 C CNN
-F 1 "+5V" H 9815 1523 50  0000 C CNN
-F 2 "" H 9800 1350 50  0001 C CNN
-F 3 "" H 9800 1350 50  0001 C CNN
-	1    9800 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 600597C0
-P 9800 1850
-F 0 "#PWR017" H 9800 1600 50  0001 C CNN
-F 1 "GND" H 9805 1677 50  0000 C CNN
-F 2 "" H 9800 1850 50  0001 C CNN
-F 3 "" H 9800 1850 50  0001 C CNN
-	1    9800 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1450 9800 1450
-Wire Wire Line
-	9800 1450 9800 1350
-Wire Wire Line
-	9900 1550 9800 1550
-Wire Wire Line
-	9800 1550 9800 1450
-Connection ~ 9800 1450
-Wire Wire Line
-	9900 1750 9800 1750
-Wire Wire Line
-	9800 1750 9800 1850
-Wire Wire Line
-	9900 1650 9800 1650
-Wire Wire Line
-	9800 1650 9800 1750
-Connection ~ 9800 1750
-Text GLabel 8800 1550 0    50   Input ~ 0
-PD1
-Text GLabel 8800 1450 0    50   Input ~ 0
-PD0
-Text GLabel 8800 1650 0    50   Input ~ 0
-PD5
-Text GLabel 8800 1750 0    50   Input ~ 0
-PD6
-Text GLabel 8800 1850 0    50   Input ~ 0
-PD7
-Text GLabel 8800 1950 0    50   Input ~ 0
-PB0
-Text GLabel 8800 2050 0    50   Input ~ 0
-PB1
-Text GLabel 8800 2150 0    50   Input ~ 0
-PB2
-Text GLabel 8800 2250 0    50   Input ~ 0
-PC2
-Text GLabel 8800 2350 0    50   Input ~ 0
-PC3
-Text GLabel 8800 2450 0    50   Input ~ 0
-ADC7
-Wire Wire Line
-	8800 2450 8900 2450
-Wire Wire Line
-	8900 2350 8800 2350
-Wire Wire Line
-	8800 2250 8900 2250
-Wire Wire Line
-	8900 2150 8800 2150
-Wire Wire Line
-	8800 2050 8900 2050
-Wire Wire Line
-	8900 1950 8800 1950
-Wire Wire Line
-	8800 1850 8900 1850
-Wire Wire Line
-	8900 1750 8800 1750
-Wire Wire Line
-	8800 1650 8900 1650
-Wire Wire Line
-	8900 1550 8800 1550
-Wire Wire Line
-	8800 1450 8900 1450
-$Comp
-L Connector_Generic:Conn_01x16 J3
-U 1 1 600CBF49
-P 9100 2150
-F 0 "J3" H 9180 2142 50  0000 L CNN
-F 1 "Conn_01x16" H 9180 2051 50  0000 L CNN
-F 2 "Gigahawk:F519-1A7A1-11016-E200" H 9100 2150 50  0001 C CNN
-F 3 "~" H 9100 2150 50  0001 C CNN
-	1    9100 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 600D0AD0
-P 10100 1550
-F 0 "J4" H 10180 1542 50  0000 L CNN
-F 1 "Conn_01x04" H 10180 1451 50  0000 L CNN
-F 2 "Gigahawk:F519-1A7A1-11004-E200" H 10100 1550 50  0001 C CNN
-F 3 "~" H 10100 1550 50  0001 C CNN
-	1    10100 1550
-	1    0    0    -1  
-$EndComp
-Text GLabel 8800 2650 0    50   Input ~ 0
-MISO
-Text GLabel 8800 2750 0    50   Input ~ 0
-MOSI
-Text GLabel 8800 2550 0    50   Input ~ 0
-SCK
-Text GLabel 8800 2950 0    50   Input ~ 0
-SDA
-Text GLabel 8800 2850 0    50   Input ~ 0
-SCL
-Wire Wire Line
-	8800 2550 8900 2550
-Wire Wire Line
-	8800 2650 8900 2650
-Wire Wire Line
-	8800 2750 8900 2750
-Wire Wire Line
-	8800 2850 8900 2850
-Wire Wire Line
-	8800 2950 8900 2950
-$Comp
 L Device:R R7
 U 1 1 601191CE
 P 3950 1650
@@ -795,4 +669,10 @@ Wire Wire Line
 	3950 1500 3950 1400
 Wire Wire Line
 	4200 1500 4200 1400
+$Sheet
+S 8050 1400 1150 350 
+U 5FF7CBCC
+F0 "reciever_main" 50
+F1 "reciever_main.sch" 50
+$EndSheet
 $EndSCHEMATC
