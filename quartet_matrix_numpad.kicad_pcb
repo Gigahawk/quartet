@@ -2704,16 +2704,7 @@
       (net 17 "Net-(D_DEL_0-Pad2)"))
   )
 
-  (gr_arc (start 3.81 3.81) (end 3.81 0) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 3.81 96.19) (end 0 96.19) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 96.19 96.19) (end 100 96.19) (angle 90) (layer Edge.Cuts) (width 0.1))
-  (gr_arc (start 96.19 3.81) (end 100 3.81) (angle -90) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 3.81 0) (end 96.19 0) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 100 3.81) (end 100 96.19) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 96.19 100) (end 3.81 100) (layer Edge.Cuts) (width 0.2))
-  (gr_line (start 0 96.19) (end 0 3.81) (layer Edge.Cuts) (width 0.2))
-  (gr_arc (start 91.725 0) (end 91.725 0) (angle 90) (layer Edge.Cuts) (width 0.2))
-
+        
   (segment (start 9.925 16.925) (end 10.025 17.025) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 3.5 16.925) (end 9.925 16.925) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 28.975 16.925) (end 29.075 17.025) (width 0.25) (layer F.Cu) (net 2))
@@ -6494,4 +6485,14 @@
       )
     )
   )
+
+  (gr_line (start 3.810 0.000) (end 96.190 -0.000) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 100.000 3.810) (end 100.000 96.190) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 96.190 100.000) (end 3.810 100.000) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start -0.000 96.190) (end 0.000 3.810) (angle 90) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 3.810 3.810) (end 3.810 0.000) (angle -90.000) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 3.810 96.190) (end -0.000 96.190) (angle -90.000) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 96.190 96.190) (end 96.190 100.000) (angle -90.000) (layer Edge.Cuts) (width 0.1))
+  (gr_arc (start 96.190 3.810) (end 100.000 3.810) (angle -90.000) (layer Edge.Cuts) (width 0.1))
 )
+ 
