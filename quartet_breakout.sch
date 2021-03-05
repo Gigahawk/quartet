@@ -37,27 +37,27 @@ F 3 "~" H 3600 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3300 4350 0    50   Input ~ 0
-PD1
+D1
 Text GLabel 3300 4250 0    50   Input ~ 0
-PD0
+D0
 Text GLabel 3300 4450 0    50   Input ~ 0
-PD5
+D2
 Text GLabel 3300 4550 0    50   Input ~ 0
-PD6
+D3
 Text GLabel 3300 4650 0    50   Input ~ 0
-PD7
+A0
 Text GLabel 3300 4750 0    50   Input ~ 0
-PB0
+A1
 Text GLabel 3300 4850 0    50   Input ~ 0
-PB1
+A2
 Text GLabel 3300 4950 0    50   Input ~ 0
-PB2
+A3
 Text GLabel 3300 5050 0    50   Input ~ 0
-PC2
+A4
 Text GLabel 3300 5150 0    50   Input ~ 0
-PC3
+A5
 Text GLabel 3300 5250 0    50   Input ~ 0
-ADC7
+SPARE
 Wire Wire Line
 	3300 5250 3400 5250
 Wire Wire Line
@@ -120,24 +120,19 @@ Wire Wire Line
 	2950 5850 2950 5750
 Wire Wire Line
 	2950 5950 2950 6050
+Wire Wire Line
+	2950 5850 3400 5850
+Wire Wire Line
+	2950 5950 3400 5950
 $Comp
-L power:+5V #PWR?
-U 1 1 5FF7CAD6
+L power:+3V3 #PWR?
+U 1 1 60477FB3
 P 2950 5750
-AR Path="/5FF53271/5FF7CAD6" Ref="#PWR?"  Part="1" 
-AR Path="/5FF53271/5FF7CBCC/5FF7CAD6" Ref="#PWR?"  Part="1" 
-AR Path="/5FF5604D/5FF9299E/5FF7CAD6" Ref="#PWR?"  Part="1" 
-AR Path="/5FF77C9D/5FF7CAD6" Ref="#PWR?"  Part="1" 
-AR Path="/5FF7CAD6" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2950 5600 50  0001 C CNN
-F 1 "+5V" H 2965 5923 50  0000 C CNN
+F 0 "#PWR?" H 2950 5600 50  0001 C CNN
+F 1 "+3V3" H 2965 5923 50  0000 C CNN
 F 2 "" H 2950 5750 50  0001 C CNN
 F 3 "" H 2950 5750 50  0001 C CNN
 	1    2950 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 5850 3400 5850
-Wire Wire Line
-	2950 5950 3400 5950
 $EndSCHEMATC

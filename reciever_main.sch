@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -14,27 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR?
-U 1 1 5FF77D09
-P 1350 1100
-AR Path="/5FF53271/5FF77D09" Ref="#PWR?"  Part="1" 
-AR Path="/5FF53271/5FF7CBCC/5FF77D09" Ref="#PWR016"  Part="1" 
-AR Path="/5FF77C4F/5FF77D09" Ref="#PWR?"  Part="1" 
-F 0 "#PWR016" H 1350 950 50  0001 C CNN
-F 1 "+5V" H 1365 1273 50  0000 C CNN
-F 2 "" H 1350 1100 50  0001 C CNN
-F 3 "" H 1350 1100 50  0001 C CNN
-	1    1350 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FF77D0A
 P 1350 1600
 AR Path="/5FF53271/5FF77D0A" Ref="#PWR?"  Part="1" 
 AR Path="/5FF53271/5FF7CBCC/5FF77D0A" Ref="#PWR017"  Part="1" 
 AR Path="/5FF77C4F/5FF77D0A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR017" H 1350 1350 50  0001 C CNN
+F 0 "#PWR?" H 1350 1350 50  0001 C CNN
 F 1 "GND" H 1355 1427 50  0000 C CNN
 F 2 "" H 1350 1600 50  0001 C CNN
 F 3 "" H 1350 1600 50  0001 C CNN
@@ -60,27 +46,27 @@ Wire Wire Line
 	1350 1400 1350 1500
 Connection ~ 1350 1500
 Text GLabel 1350 2250 0    50   Input ~ 0
-PD1
+D1
 Text GLabel 1350 2150 0    50   Input ~ 0
-PD0
+D0
 Text GLabel 1350 2350 0    50   Input ~ 0
-PD5
+D2
 Text GLabel 1350 2450 0    50   Input ~ 0
-PD6
+D3
 Text GLabel 1350 2550 0    50   Input ~ 0
-PD7
+A0
 Text GLabel 1350 2650 0    50   Input ~ 0
-PB0
+A1
 Text GLabel 1350 2750 0    50   Input ~ 0
-PB1
+A2
 Text GLabel 1350 2850 0    50   Input ~ 0
-PB2
+A3
 Text GLabel 1350 2950 0    50   Input ~ 0
-PC2
+A4
 Text GLabel 1350 3050 0    50   Input ~ 0
-PC3
+A5
 Text GLabel 1350 3150 0    50   Input ~ 0
-ADC7
+SPARE
 Wire Wire Line
 	1350 3150 1450 3150
 Wire Wire Line
@@ -127,6 +113,8 @@ $Comp
 L gigahawk:QUARTET_RECV J3
 U 1 1 5FF794DA
 P 1650 2100
+AR Path="/5FF794DA" Ref="J3"  Part="1" 
+AR Path="/5FF77C4F/5FF794DA" Ref="J3"  Part="1" 
 F 0 "J3" H 1947 1350 50  0000 L CNN
 F 1 "QUARTET_RECV" H 1947 1259 50  0000 L CNN
 F 2 "Gigahawk:QUARTET_RECV_MAIN" H 1700 2100 50  0001 C CNN
@@ -138,11 +126,24 @@ $Comp
 L gigahawk:QUARTET_RECV J3
 U 2 1 5FF7AE7A
 P 1650 1150
+AR Path="/5FF7AE7A" Ref="J3"  Part="2" 
+AR Path="/5FF77C4F/5FF7AE7A" Ref="J3"  Part="2" 
 F 0 "J3" H 1897 1000 50  0000 L CNN
 F 1 "QUARTET_RECV" H 1897 909 50  0000 L CNN
 F 2 "Gigahawk:QUARTET_RECV_MAIN" H 1700 1150 50  0001 C CNN
 F 3 "" H 1700 1150 50  0001 C CNN
 	2    1650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60473FED
+P 1350 1100
+F 0 "#PWR?" H 1350 950 50  0001 C CNN
+F 1 "+3V3" H 1365 1273 50  0000 C CNN
+F 2 "" H 1350 1100 50  0001 C CNN
+F 3 "" H 1350 1100 50  0001 C CNN
+	1    1350 1100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
