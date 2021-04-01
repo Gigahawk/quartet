@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 155)
     (zones 0)
     (modules 20)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.25)
     (user_trace_width 0.4)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "export_main_numpad/"))
   )
 
   (net 0 "")
@@ -644,7 +644,7 @@
     (descr "Common footprint for the Adafruit Feather series of boards, https://learn.adafruit.com/adafruit-feather/feather-specification")
     (tags "Adafruit Feather")
     (path /5FF53271/604181A6)
-    (fp_text reference A1 (at 10.16 -7.62) (layer F.SilkS)
+    (fp_text reference A1 (at 1.778 46.228) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Adafruit_Feather_Generic (at 10.16 45.72 180) (layer F.Fab)
@@ -899,7 +899,7 @@
   (module Gigahawk:BLUEFRUIT_SPI_FRIEND (layer F.Cu) (tedit 5E71D44B) (tstamp 604DDE7D)
     (at 33.274 95.518)
     (path /5FF53271/5FF87C7A)
-    (fp_text reference A2 (at 0 -12.2) (layer F.SilkS)
+    (fp_text reference A2 (at -7.874 -26.938) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value BLUEFRUIT_SPI_FRIEND (at 0 -19.05) (layer F.Fab)
@@ -960,6 +960,9 @@
       (net 4 BLE_IRQ))
   )
 
+  (gr_text JLCJLCJLCJLC (at 81.28 20.32 90) (layer F.SilkS)
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
   (gr_line (start 3.81 0) (end 96.19 0) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 6042AF88))
   (gr_line (start 100 3.81) (end 100 96.19) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 96.19 100) (end 3.81 100) (angle 90) (layer Edge.Cuts) (width 0.1))
@@ -1125,7 +1128,7 @@
   (segment (start 47.82198 36.25202) (end 43.942 40.132) (width 0.4) (layer B.Cu) (net 29))
   (segment (start 59.638606 36.25202) (end 47.82198 36.25202) (width 0.4) (layer B.Cu) (net 29))
 
-  (zone (net 3) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 3) (net_name GND) (layer F.Cu) (tstamp 60657B0D) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1522,7 +1525,7 @@
       )
     )
   )
-  (zone (net 12) (net_name +3V3) (layer B.Cu) (tstamp 6042BD5B) (hatch edge 0.508)
+  (zone (net 12) (net_name +3V3) (layer B.Cu) (tstamp 60657B0A) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
